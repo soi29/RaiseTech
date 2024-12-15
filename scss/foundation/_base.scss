@@ -1,12 +1,15 @@
 
+@use "./mixin" as *;
+@use "./variables" as *;
+
 html {
-    font-size: 62.5%;
+    font-size: 100%;
+    font-family: $second-font;
     box-sizing: border-box;
+    line-height: 1.6;
 }
 body {
-    font-size: 1.6rem;
-    line-height: 1.6;
-    width: 100%;
+    background-color: $color-bg1;
     overflow-x: hidden;
 }
 img {
@@ -22,4 +25,10 @@ a {
 }
 ul,ol {
     list-style: none;
+}
+h1 {
+    @include font-size(60);
+}
+h2 {
+    @include font-size(40);
 }

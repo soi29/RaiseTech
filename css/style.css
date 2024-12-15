@@ -1,3 +1,6 @@
+/*--------------------------------------*
+* foundation
+*--------------------------------------*/
 /* Box sizing rules */
 *,
 *::before,
@@ -15,8 +18,7 @@ html {
 /* Remove default margin in favour of better control in authored CSS */
 body, h1, h2, h3, h4, p,
 figure, blockquote, dl, dd {
-  -webkit-margin-after: 0;
-          margin-block-end: 0;
+  margin-block-end: 0;
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
@@ -75,14 +77,14 @@ textarea:not([rows]) {
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 100%;
+  font-family: "M PLUS 1p", sans-serif;
   box-sizing: border-box;
+  line-height: 1.6;
 }
 
 body {
-  font-size: 1.6rem;
-  line-height: 1.6;
-  width: 100%;
+  background-color: #FFF7EF;
   overflow-x: hidden;
 }
 
@@ -102,4 +104,25 @@ a:hover {
 ul, ol {
   list-style: none;
 }
-/*# sourceMappingURL=style.css.map */
+
+h1 {
+  font-size: 60px;
+  font-size: 3.75rem;
+}
+
+h2 {
+  font-size: 40px;
+  font-size: 2.5rem;
+}
+
+/*--------------------------------------*
+* layout
+*--------------------------------------*/
+.l-header {
+  height: 217px;
+}
+.l-header__logo {
+  color: #707070;
+  padding: 66px;
+  margin: 0;
+}/*# sourceMappingURL=style.css.map */
