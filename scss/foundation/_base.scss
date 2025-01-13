@@ -9,6 +9,7 @@ html {
     line-height: 1.6;
 }
 body {
+    margin: 0;
     background-color: $color-bg1;
     overflow-x: hidden;
 }
@@ -31,4 +32,10 @@ h1 {
 }
 h2 {
     @include font-size(40);
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 20%;
+    grid-template-rows: 128px 1fr 128px;
+
 }

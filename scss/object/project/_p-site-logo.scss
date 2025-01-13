@@ -1,0 +1,9 @@
+
+@use "../../foundation/variables" as *;
+
+.p-site-logo {
+    font-size: 2rem; /* 32px */
+    font-weight: 700;
+    font-family: $first-font;
+    color: $color-gray;
+}

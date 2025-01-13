@@ -2,38 +2,170 @@
 
 <html lang="ja">
   <head>
-    <!-- 必須メタ情報 --> 
     <meta charset="utf-8"/>
     <meta name="author" content="soi"/>
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <!-- タイトル　-->
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <title>Humburgerサイト</title>
-    <!-- ファビコン　-->
     <link rel="icon" href="img/favicon.png"/>
-    <!-- フォント　-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Alata&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Mono+One&display=swap" rel="stylesheet">
-    <!-- CSSのリンク　-->
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
   </head>
 
-
   <body>
-    <header class="l-header">
-      <div class="l-header__inner">
-        <h1 class="l-header__logo">Hamburger</h1>
-        <form action="#" class="">
-          <input type="search" placeholder="">
-          <button type="submit">検索</button>
-        </form>
-      </div>
-    </header>
+    <div class="container">
+      <header class="l-header">
+        <div class="p-header">
+          <div class="p-site-logo">Hamburger</div>
+          <div class="p-seach">
+            <input type="text" aria-label="キーワードを入力">
+            <button type="submit">検索</button>
+          </div>
+        </div>
+      </header>
+      <aside class="l-sidebar">
+        <div class="p-sidebar">
+          <div class="c-ttl">Menu</div>
+          <div class="p-sidebar__sec">
+              <div class="c-ttl__second">バーガー</div>
+              <ul class="c-list">
+                <li class="c-list__item">ハンバーガー</li>
+                <li class="c-list__item">チーズバーガー</li>
+                <li class="c-list__item">テリヤキバーガー</li>
+                <li class="c-list__item">アボカドバーガー</li>
+                <li class="c-list__item">フィッシュバーガー</li>
+                <li class="c-list__item">ベーコンバーガー</li>
+                <li class="c-list__item">チキンバーガー</li>
+              </ul>
+          </div>
+          <div class="p-sidebar__sec">
+              <div class="c-ttl__second">サイド</div>
+              <ul class="c-list">
+                <li class="c-list__item">ポテト</li>
+                <li class="c-list__item">サラダ</li>
+                <li class="c-list__item">ナゲット</li>
+                <li class="c-list__item">コーン</li>
+              </ul>
+          </div>
+          <div class="p-sidebar__sec">
+              <div class="c-ttl__second">ドリンク</div>
+              <ul class="c-list">
+                <li class="c-list__item">コーラ</li>
+                <li class="c-list__item">ファンタ</li>
+                <li class="c-list__item">オレンジ</li>
+                <li class="c-list__item">アップル</li>
+                <li class="c-list__item">紅茶（Ice/Hot）</li>
+                <li class="c-list__item">コーヒー（Ice/Hot）</li>
+              </ul>
+          </div>
+        </div> 
+      </aside>
 
-    <main>
-      
-    </main>
+
+      <main class="l-main">
+        <div class="p-main__home">
+          <img class="p-main__home-img" src="img/mainvisual-pc.png" alt="ホームビジュアルの写真">
+          <div class="p-main__home-ttl">ダミーサイト</div>
+        </div>
+        <div class="p-main__front">
+          <div class="p-main__front-wrapper">
+            <div class="p-main__front-block">
+              <img class="p-main__front-img" src="./img/three-burgers-on-brown-wooden-tray-between-white-ceramic-1841108 (1).png" alt="">
+              <div class="p-main__front-head">Take Out</div>
+              <div class="c-border"></div>
+              <div class="p-card-wrapper">
+                <div class="p-card">
+                  <div class="c-ttl__second">Take OUT</div>
+                  <div class="c-txt">
+                    当店のテイクアウトで利用できる商品を掲載しています
+                    当店のテイクアウトで利用できる商品を掲載しています
+                    当店のテイクアウトで利用できる商品を掲載しています
+                    当店のテイクアウトで利用できる商品を掲載しています
+                    当店のテイクアウトで利用できる商品を掲載しています
+                  </div>
+                </div>
+                <div class="p-card">
+                  <div class="c-ttl__second">Take OUT</div>
+                  <div class="c-txt">
+                    当店のテイクアウトで利用できる商品を掲載しています
+                    当店のテイクアウトで利用できる商品を掲載しています
+                    当店のテイクアウトで利用できる商品を掲載しています
+                    当店のテイクアウトで利用できる商品を掲載しています
+                    当店のテイクアウトで利用できる商品を掲載しています
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="p-main__front-block">
+              <img class="p-main__front-img" src="./img/473d814b175bd517b56eb309f2958725.png" alt="">
+              <div class="p-main__front-head">Eat In</div>
+              <div class="c-border"></div>
+              <div class="p-card-wrapper">
+                <div class="p-card">
+                  <div class="c-ttl__second">Eat In</div>
+                  <div class="c-txt">
+                    店内でお食事いただけるメニューです
+                    店内でお食事いただけるメニューです
+                    店内でお食事いただけるメニューです
+                    店内でお食事いただけるメニューです
+                    店内でお食事いただけるメニューです
+                    店内でお食事いただけるメニューです
+                    店内でお食事いただけるメニューです
+                  </div>
+                </div>
+                <div class="p-card">
+                  <div class="c-ttl__second">Eat In</div>
+                  <div class="c-txt">
+                    店内でお食事いただけるメニューです
+                    店内でお食事いただけるメニューです
+                    店内でお食事いただけるメニューです
+                    店内でお食事いただけるメニューです
+                    店内でお食事いただけるメニューです
+                    店内でお食事いただけるメニューです
+                    店内でお食事いただけるメニューです
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>    
+        </div>
+
+        <div class="p-map">
+          <div class="p-map__wrapper">
+            <img class="p-map__img" src="img/map-front.png" alt="マップ写真">
+            <div class="p-txt">
+              <div class="c-ttl">見出しが入ります</div>
+              <div class="c-border"></div>
+              <div class="c-txt">
+                テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="l-footer">
+        <div class="p-footer">
+          <img src="img/bar_footer.png" alt="フッター画像">
+            <div class="p-footer__overlay">
+              <ul class="p-footer__links">
+                <li class="p-footer__link"><a href="#">ショップ情報</a></li>
+                <li class="p-footer__link p-footer__line"></li>
+                <li class="p-footer__link"><a href="#">ヒストリー</a></li>
+              </ul>
+              <small class="p-copyright">Copyright: RaiseTech</small>
+            </div>
+        </div>
+      </footer>
+    </div>
   </body>
-
-
 </html>

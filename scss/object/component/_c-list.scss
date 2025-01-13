@@ -1,0 +1,9 @@
+
+@use "../../foundation/variables" as *;
+.c-list {
+    line-height: 2.5;
+
+    &__item {
+        color: $color-gray;
+    }
+}

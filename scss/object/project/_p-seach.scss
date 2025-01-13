@@ -1,0 +1,31 @@
+
+    .p-seach {
+        position: relative;
+
+        &::before {
+            content: ""; /* 擬似要素に必須　*/
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            background: url(../../../img/magnifying.jpeg);
+            position: absolute;
+            top: 8px;
+            left: 8px;
+
+        }
+        input {
+            width: 250px;
+            height: 32px;
+            border-radius: 8px;
+            border-width: 1px;
+            border-color: #707070;
+        }
+        button {
+            margin-left: 5px;
+            color: #707070;
+            padding: 5px 30px;
+            border-radius: 8px;
+            border-width: 1px;
+            border-color: #707070;
+        }
+    }

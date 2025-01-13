@@ -1,0 +1,8 @@
+
+@use "../../foundation/variables" as *;
+
+.c-border {
+    width: 50px;
+    height: 3px;
+    background-color: $color-lightgray;
+}

@@ -1,0 +1,52 @@
+
+@use "../../foundation/variables" as *;
+
+.p-map {
+ position: relative;
+ height: auto;
+ width: 100%;
+
+ &__wrapper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, .4),  rgba(0, 0, 0, .4));
+  }
+ &__img {
+   width: 100%;
+   height: 480px;
+   object-fit: cover;
+
+  }
+ .p-txt {
+    color: $color-white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 65%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, .3),  rgba(0, 0, 0, .3));
+    padding: 50px 80px;
+  }
+ .c-ttl {
+    color: $color-white;
+    margin-bottom: 30px;
+    letter-spacing: 0.01rem;
+  }
+ .c-txt {
+    overflow: hidden;
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: $color-white;
+    line-height: 2.06;
+    letter-spacing: 0.01rem;
+    height: 300px;
+    margin: 35px 0 0;
+  }
+
+  
+
+}

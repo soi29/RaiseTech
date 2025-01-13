@@ -1,13 +1,4 @@
 
-@use "../foundation/variables" as *;
-
-
 .l-header {
-    height: 217px;
-
-    &__logo {
-        color: $color-gray;
-        padding: 66px;
-        margin: 0;
-    }
+    background-color: #FFF7EF;
 }

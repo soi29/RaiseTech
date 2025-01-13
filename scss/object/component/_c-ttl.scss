@@ -1,0 +1,15 @@
+
+@use "../../foundation/variables" as *;
+
+.c-ttl {
+    font-size: 1.5rem; /* 20px */
+    font-weight: 700;
+    color: $color-gray;
+    font-family: $first-font;
+
+    &__second {
+        font-size: 1.125rem; /* 18px */
+        font-weight:700;
+        color: $color-gray;
+    }
+}

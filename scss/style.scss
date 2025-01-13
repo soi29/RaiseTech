@@ -1,16 +1,41 @@
 
 @charset "UTF-8";
+
 /*--------------------------------------*
 * foundation
 *--------------------------------------*/
-@use "./foundation/reset";
-@use "./foundation/base";
-@use "./foundation/mixin";
-@use "./foundation/variables";
+@use "../scss/foundation/reset";
+@use "../scss/foundation/variables";
+@use "../scss/foundation/mixin";
+@use "../scss/foundation/base";
 
 /*--------------------------------------*
 * layout
 *--------------------------------------*/
-@use "./layout/header";
-@use "./layout/sidebar";
-@use "./layout/footer";
+@use "../scss/layout/l-header";
+@use "../scss/layout/l-main";
+@use "../scss/layout/l-sidebar";
+@use "../scss/layout/l-footer";
+
+
+/*--------------------------------------*
+* component
+*--------------------------------------*/
+@use "./object/component/c-ttl";
+@use "./object/component/c-list";
+@use "./object/component/c-border";
+@use "./object/component/c-txt";
+
+
+/*--------------------------------------*
+* project
+*--------------------------------------*/
+@use "../scss/object/project/p-header";
+@use "../scss/object/project/p-main";
+@use "../scss/object/project/p-site-logo";
+@use "../scss/object/project/p-sidebar";
+@use "../scss/object/project/p-card";
+@use "../scss/object/project/p-seach";
+@use "../scss/object/project/p-map";
+@use "../scss/object/project/p-footer";
+@use "../scss/object/project/p-copyright";
