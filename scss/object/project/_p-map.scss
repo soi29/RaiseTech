@@ -17,9 +17,8 @@
   }
  &__img {
    width: 100%;
-   height: 480px;
+   height: auto;
    object-fit: cover;
-
   }
  .p-txt {
     color: $color-white;
@@ -37,14 +36,13 @@
     letter-spacing: 0.01rem;
   }
  .c-txt {
-    overflow: hidden;
-    font-size: 0.875rem;
-    font-weight: 700;
+    font-size: clamp(0.75rem, 1.0vw, 1.2rem);
+    font-weight: 600;
     color: $color-white;
     line-height: 2.06;
     letter-spacing: 0.01rem;
-    height: 300px;
-    margin: 35px 0 0;
+    height: auto;
+    margin: 35px 0 35px;
   }
 
   

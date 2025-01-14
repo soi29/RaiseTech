@@ -242,18 +242,13 @@ h2 {
   height: auto;
 }
 .p-main__front .p-card {
-  height: 140px;
-  font-size: 0.875rem;
+  height: auto;
+  font-size: clamp(0.75rem, 1vw, 1.2rem);
   padding: 10px;
   margin: 10px;
-  overflow: hidden;
 }
 .p-main__front .c-ttl__second {
   color: #3C2A10;
-}
-.p-main__front .c-txt {
-  height: 95px;
-  overflow: hidden;
 }
 
 .p-site-logo {
@@ -324,7 +319,7 @@ h2 {
 }
 .p-map__img {
   width: 100%;
-  height: 480px;
+  height: auto;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -344,14 +339,13 @@ h2 {
   letter-spacing: 0.01rem;
 }
 .p-map .c-txt {
-  overflow: hidden;
-  font-size: 0.875rem;
-  font-weight: 700;
+  font-size: clamp(0.75rem, 1vw, 1.2rem);
+  font-weight: 600;
   color: #FFFFFF;
   line-height: 2.06;
   letter-spacing: 0.01rem;
-  height: 300px;
-  margin: 35px 0 0;
+  height: auto;
+  margin: 35px 0 35px;
 }
 
 .p-footer {
