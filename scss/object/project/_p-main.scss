@@ -21,7 +21,7 @@
         }
     }
     &__front {
-        padding: 60px;
+        padding: 5%;
 
         &-wrapper {
             display: flex;
@@ -48,13 +48,11 @@
             position: absolute;
             top: 90px;
             left: 10px;
+            width: 50px;
         }
         .p-card-wrapper {
             position: absolute;
             bottom: 5px;
-            flex-direction: column;
-            width: auto;
-            height: auto;
         }
         .p-card {
             height: auto;
@@ -66,4 +64,26 @@
             color: $color-brown;
         }
     }
+}
+
+@media (max-width: 768px) {
+    .p-main{
+        &__front {
+            &-head {
+                font-size: 2.0rem;
+            }
+            .c-border {
+                top: 70px;
+                width: 30px;
+            }
+            .p-card {
+                height: auto;
+                font-size: clamp(0.75rem, 1.0vw, 1.0rem);
+                padding: 10px;
+                margin: 10px;
+            }     
+        }
+        
+    }
+    
 }

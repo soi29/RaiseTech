@@ -6,3 +6,10 @@
     padding: 40px 20px 40px;
 
 }
+
+@media (max-width: 768px) {
+    .p-header {
+        text-align: center;
+        flex-direction: column;
+    }
+}

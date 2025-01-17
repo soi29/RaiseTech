@@ -2,3 +2,9 @@
 .l-header {
     background-color: #FFF7EF;
 }
+
+@media (max-width: 768px) {
+    .l-header {
+        margin: 0 auto;
+    }
+}
