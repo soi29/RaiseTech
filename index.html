@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
   </head>
 
   <body>
@@ -19,17 +20,20 @@
       <header class="l-header">
         <div class="p-header">
           <h1 class="p-site-logo">Hamburger</h1>
+          <button id="js-btn__sp" class="c-btn c-btn__sp">Menu</button>
           <div class="p-seach">
             <input type="text" aria-label="キーワードを入力">
             <button type="submit">検索</button>
           </div>
         </div>
       </header>
+      <div class="c-overlay js-overlay"></div>
       <aside class="l-sidebar">
+        <button id="js-btn__cross" class="c-btn c-btn__cross"></button>
+        <button class="c-btn c-btn__pc">Menu</button>
         <div class="p-sidebar">
-          <div class="c-ttl">Menu</div>
           <div class="p-sidebar__sec">
-              <div class="c-ttl__second">バーガー</div>
+              <h3 class="c-ttl__second">バーガー</h3>
               <ul class="c-list">
                 <li class="c-list__item">ハンバーガー</li>
                 <li class="c-list__item">チーズバーガー</li>
@@ -41,7 +45,7 @@
               </ul>
           </div>
           <div class="p-sidebar__sec">
-              <div class="c-ttl__second">サイド</div>
+              <h3 class="c-ttl__second">サイド</h3>
               <ul class="c-list">
                 <li class="c-list__item">ポテト</li>
                 <li class="c-list__item">サラダ</li>
@@ -50,7 +54,7 @@
               </ul>
           </div>
           <div class="p-sidebar__sec">
-              <div class="c-ttl__second">ドリンク</div>
+              <h3 class="c-ttl__second">ドリンク</h3>
               <ul class="c-list">
                 <li class="c-list__item">コーラ</li>
                 <li class="c-list__item">ファンタ</li>
@@ -72,9 +76,7 @@
         <div class="p-main__front">
           <div class="p-main__front-wrapper">
             <div class="p-main__front-block">
-              <div class="p-main__front-head">Take Out
-                <div class="c-border"></div>
-              </div>
+              <h1 class="p-main__front-head">Take Out</h1>              
               <div class="p-card-wrapper">
                 <div class="p-card">
                   <h3 class="c-ttl__second">Take OUT</h3>
@@ -83,28 +85,7 @@
                     当店のテイクアウトで利用できる商品を掲載しています
                     当店のテイクアウトで利用できる商品を掲載しています
                     当店のテイクアウトで利用できる商品を掲載しています
-                    当店のテイクアウトで利用できる商品を掲載しています
-                    当店のテイクアウトで利用できる商品を掲載しています
-                    当店のテイクアウトで利用できる商品を掲載しています
-                    当店のテイクアウトで利用できる商品を掲載しています
-                    当店のテイクアウトで利用できる商品を掲載しています
-                    当店のテイクアウトで利用できる商品を掲載しています
-                    当店のテイクアウトで利用できる商品を掲載しています
-                    当店のテイクアウトで利用できる商品を掲載しています
-                    当店のテイクアウトで利用できる商品を掲載しています
-                    当店のテイクアウトで利用できる商品を掲載しています
-                    当店のテイクアウトで利用できる商品を掲載しています
-                    当店のテイクアウトで利用できる商品を掲載しています
-                    当店のテイクアウトで利用できる商品を掲載しています
-                    当店のテイクアウトで利用できる商品を掲載しています
-                    当店のテイクアウトで利用できる商品を掲載しています
-                    当店のテイクアウトで利用できる商品を掲載しています
-                    当店のテイクアウトで利用できる商品を掲載しています
-                    当店のテイクアウトで利用できる商品を掲載しています
-                    当店のテイクアウトで利用できる商品を掲載しています
-                    当店のテイクアウトで利用できる商品を掲載しています
-                    当店のテイクアウトで利用できる商品を掲載しています
-                    
+                    当店のテイクアウトで利用できる商品を掲載しています                    
                   </p>
                 </div>
                 <div class="p-card">
@@ -120,9 +101,7 @@
               </div>
             </div>
             <div class="p-main__front-block">
-              <div class="p-main__front-head">Eat In
-                <div class="c-border"></div>
-              </div>
+              <h1 class="p-main__front-head">Eat In</h1>
               <div class="p-card-wrapper">
                 <div class="p-card">
                   <h3 class="c-ttl__second">Eat In</h3>
@@ -165,9 +144,6 @@
                 テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
                 テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
                 テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-                テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-                テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-                テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
               </p>
             </div>
           </div>
@@ -175,17 +151,17 @@
       </main>
       <footer class="l-footer">
         <div class="p-footer">
-          <img src="img/bar_footer.png" alt="フッター画像">
-            <div class="p-footer__overlay">
-              <ul class="p-footer__links">
-                <li class="p-footer__link"><a href="#">ショップ情報</a></li>
-                <li class="p-footer__link p-footer__line"></li>
-                <li class="p-footer__link"><a href="#">ヒストリー</a></li>
-              </ul>
-              <small class="p-copyright">Copyright: RaiseTech</small>
-            </div>
+          <div class="p-footer__block">
+            <ul class="p-footer__links">
+              <li class="p-footer__link"><a href="#">ショップ情報</a></li>
+              <li class="p-footer__link p-footer__line"></li>
+              <li class="p-footer__link"><a href="#">ヒストリー</a></li>
+            </ul>
+            <small class="p-copyright">Copyright: RaiseTech</small>
+          </div>
         </div>
       </footer>
     </div>
+    <script src="./js/main.js"></script>
   </body>
 </html>

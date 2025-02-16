@@ -32,3 +32,12 @@
     margin: 50px 0 0;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .p-map {
+    .p-txt {
+      width: 100%;
+      padding: 40px;
+    }
+  }
+}

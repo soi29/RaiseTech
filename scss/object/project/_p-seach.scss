@@ -1,6 +1,7 @@
 
     .p-seach {
         position: relative;
+    
 
         &::before {
             content: ""; /* 擬似要素に必須　*/
@@ -9,8 +10,8 @@
             height: 16px;
             background: url(../../../img/magnifying.jpeg);
             position: absolute;
-            top: 8px;
-            left: 8px;
+            top: 25%;
+            left: 2%;
 
         }
         input {
@@ -27,5 +28,13 @@
             border-radius: 8px;
             border-width: 1px;
             border-color: #707070;
+        }
+    }
+    @media (max-width: 375px) {
+        .p-seach {
+            width: auto;
+        }
+        .p-seach input {
+            width: auto;
         }
     }

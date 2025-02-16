@@ -11,5 +11,9 @@
     .p-header {
         text-align: center;
         flex-direction: column;
+
+        .p-site-logo {
+            margin-bottom: 40px;
+        }
     }
 }

@@ -4,12 +4,67 @@
 .l-sidebar {
     background-color: $color-bg2;
     grid-row: 1 / 3;
-    grid-column: 2 / 3;
-    
+    grid-column: 2 / 3;    
+}
+.cross-btn {
+    display: none;
+}
+.c-btn__pc {
+    margin-top: 40px;
+    margin-left: 20px;
 }
 
 @media (max-width: 768px) {
     .l-sidebar {
-        display: none;
+        width: 30%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        right: -30%;
+        transition: right .6s ease-in-out;
+        z-index: 20;
+        overflow-y: auto;        
+    }
+    .l-sidebar.active {
+        overflow-y: scroll;
+        right: 0;
+        transition: right .6s ease-in-out;
+    }
+    
+
+    /* ×印のボタン */
+    .c-btn__cross {
+        display: inline-block;
+        position: relative;
+        width: 30px;
+        height: 30px;
+        padding: 0;
+        margin: 5px 0 0 0;
+        border: none;
+        right: -85%;
+
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: 50%;
+            width: 3px;
+            height: 27px;
+            background-color: $color-gray; 
+        }
+        &::before {
+            transform: translate(-50%, -50%) rotate(45deg); /* 斜めの線1 */
+        }
+        
+        &::after {
+            transform: translate(-50%, -50%) rotate(-45deg); /* 斜めの線2 */
+        }
+    }
+}
+@media (max-width: 425px)  {
+    .l-sidebar {
+        width: 60%;
+        right: -60%;
     }
 }
